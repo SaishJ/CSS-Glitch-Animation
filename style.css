@@ -1,0 +1,35 @@
+body {
+  background: rgb(48, 50, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 14rem;
+  height: 14rem;
+  background: url(./images/javascript.svg);
+  background-size: cover;
+  animation: glitch 3.75s infinite steps(1);
+}
+
+@keyframes glitch {
+  0%,
+  55.1%,
+  100% {
+    background: url(./images/javascript.svg);
+    background-size: cover;
+  }
+  50% {
+    background: url(./images/javascript-glitch-1.png);
+    background-size: cover;
+  }
+  52.2% {
+    background: url(./images/javascript-glitch-2.png);
+    background-size: cover;
+  }
+  55% {
+    background: url(./images/javascript-glitch-3.png);
+    background-size: cover;
+  }
+}
